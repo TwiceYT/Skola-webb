@@ -1,21 +1,28 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and HTML styling */
 body, html {
     height: 100%;
+    background-color: black;
 }
 
-h1{
+/* Header styling */
+h1 {
     color: black;
+    margin-top: 5vh;
 }
 
-span{
-color: red !important;
+/* General Span styling */
+span {
+    color: red !important;
 }
 
+/* Layout Containers */
 .container {
     display: flex;
     height: 100vh;
@@ -28,6 +35,7 @@ color: red !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 2px;
 }
 
 .ovningar {
@@ -38,6 +46,10 @@ color: red !important;
     height: 80%;
     padding: 10px;
     list-style-type: none;
+}
+
+.ovnhr {
+    margin: 10px;
 }
 
 .nav ul {
@@ -65,19 +77,90 @@ color: red !important;
     flex-direction: column;
 }
 
-.top-right{
+.top-right {
     background-color: lightgreen;
-    width: 90vw;
+    width: 100%;
     height: 50vh;
 }
 
-.textintro{
+.textintro {
     text-align: center;
 }
 
-
-.bottom-right{
+.bottom-right {
     background-color: antiquewhite;
-    width: 90vw;
+    width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rotating Image Gallery Styling */
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+}
+
+.box-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-1 {
+    transform: rotateY(calc(1 * 45deg)) translateZ(400px);
+}
+
+.item-2 {
+    transform: rotateY(calc(2 * 45deg)) translateZ(400px);
+}
+
+.item-3 {
+    transform: rotateY(calc(3 * 45deg)) translateZ(400px);
+}
+
+.item-4 {
+    transform: rotateY(calc(4 * 45deg)) translateZ(400px);
+}
+
+.item-5 {
+    transform: rotateY(calc(5 * 45deg)) translateZ(400px);
+}
+
+.item-6 {
+    transform: rotateY(calc(6 * 45deg)) translateZ(400px);
+}
+
+.item-7 {
+    transform: rotateY(calc(7 * 45deg)) translateZ(400px);
+}
+
+.item-8 {
+    transform: rotateY(calc(8 * 45deg)) translateZ(400px);
 }
