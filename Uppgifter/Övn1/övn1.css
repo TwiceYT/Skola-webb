@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.bildp{
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: red;
+}
+p{
+    text-align: center;
+    color: rgb(187, 238, 250);
+}
+b{
+    color: aqua;
+}
+
+.ul{
+    color: antiquewhite;
+    font-size: 1rem;
+    
+}
+
+.bildsamo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; /* or any other percentage */
+    margin-bottom: 5vh;
+}
+
+a{
+    display: block;
+    align-items: center !important;
+    text-align: center;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    text-decoration: none;
+    color: #5fcc80;
+    font-size: 16px;
+
+}
+
+a:hover{
+    text-decoration:underline;
+    text-decoration-color: rgb(120, 167, 209);
+}
+
+.wfärg1{
+    color: rgb(242, 255, 0);
+}
+.wfärg2{
+    color: rgb(60, 255, 0);
+}
+.wfärg3{
+    color:blueviolet;
+}
+
+.lightblue{
+    color: blueviolet;
+    background-color: lightblue;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 10vh;
+}
+
+.fonth3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.css{
+    color: red;
+    font-size: 1.1em;
+}
+
+.hr1{
+    width: 25%;
+    border-top: 1px solid red;
+}
+.hr2{
+    width: 15%;
+    border-top: 1px solid red;
+}
+.hr3{
+    width: 5%;
+    border-top: 1px solid red;
+    margin-top: 0 auto;
+}
+
+.namn{
+    color: aquamarine;
+}
+.datum{
+    color: darkmagenta;
+}
+
+.blueviolet{
+    background-color: blueviolet;
+    color: black;
+}
+.gold{
+    background-color: gold;
+    color: black;
+}
+.red{
+    background-color: red;
+    color: black;
+}
+.redb{
+    background-color: rgb(28, 219, 133);
+
+}
+li::marker {
+    color: red;
+  }
+
+ol{
+    margin-left: 41vw;
+}

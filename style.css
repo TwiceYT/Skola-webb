@@ -12,13 +12,13 @@ body, html {
 }
 
 /* Header styling */
-h1 {
+.textintro {
     color: rgb(255, 255, 255);
     margin-top: 5vh;
 }
 
 /* General Span styling */
-span {
+.red {
     color: red !important;
 }
 
@@ -52,6 +52,10 @@ span {
     margin: 10px;
 }
 
+.egnapro{
+    margin-bottom: 30px;
+}
+
 .nav ul {
     list-style-type: none;
     padding: 0;
@@ -64,11 +68,38 @@ span {
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     transition: background-color 0.3s linear;
+    text-decoration: underline;
+    margin-top: 10px;
 }
 
 .nav a:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(150, 245, 250);
     transition: font-size 0.5s;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Underline effect for navbar links */
+.navbar ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blueviolet;
+    display: block;
+    margin: auto;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Expand underline on hover */
+.navbar ul li a:hover::after {
+    width: 100%;
 }
 
 .rightcolumn {
@@ -96,11 +127,16 @@ span {
     align-items: center;
 }
 
+.bildtext {
+    color: brown;
+    text-align: start;
+}
+
 /* Rotating Image Gallery Styling */
 .box {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
 }
@@ -134,33 +170,33 @@ span {
 }
 
 .item-1 {
-    transform: rotateY(calc(1 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(1 * 45deg)) translateZ(200px);
 }
 
 .item-2 {
-    transform: rotateY(calc(2 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(2 * 45deg)) translateZ(200px);
 }
 
 .item-3 {
-    transform: rotateY(calc(3 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(3 * 45deg)) translateZ(200px);
 }
 
 .item-4 {
-    transform: rotateY(calc(4 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(4 * 45deg)) translateZ(200px);
 }
 
 .item-5 {
-    transform: rotateY(calc(5 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(5 * 45deg)) translateZ(200px);
 }
 
 .item-6 {
-    transform: rotateY(calc(6 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(6 * 45deg)) translateZ(200px);
 }
 
 .item-7 {
-    transform: rotateY(calc(7 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(7 * 45deg)) translateZ(200px);
 }
 
 .item-8 {
-    transform: rotateY(calc(8 * 45deg)) translateZ(400px);
+    transform: rotateY(calc(8 * 45deg)) translateZ(200px);
 }
