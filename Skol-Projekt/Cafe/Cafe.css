@@ -6,18 +6,19 @@ h1{
     text-align: center;
     font-size: 30px;
     height: 5vh;
+    margin-bottom: 5vh;
 }
 
-.startimage{
-    height: 30vh;
+#startimage{
+    width: 70vw;
+    height: 40vh;
 }
 
 .centerimg{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
-    width: auto;    
+    margin-bottom: 0px;   
     border: 2px solid white;
     border-radius: 30px;
     height: 30vh;
@@ -25,17 +26,52 @@ h1{
 
 
 .menu{
-    width: 99vw;
-    height: 40vh;
+    width: 51vw;
+    height: 20vh;
+    margin: 0 auto;
+    margin-top: 25px;
 }
 .coffee{
-    width: 50vw;
-    height: 40vh;
-    background: #ffa600;
+    width: 25vw;
+    margin: 0 auto;
+    height: 30vh;
+    float: left;
+    background-color: black;
+}
+.float{
+    display: flex;
 }
 
 .tea{
-    width: 50vw;
-    height: 40vh;
-    background: #ffa600;
+    width: 25vw;
+    margin: 0 auto;
+    height: 30vh;
+    float: left;
+    background-color: white;
+}
+
+.menutitle{
+    color: #ffa600;
+    margin-bottom: 1vh;
+    font-size: 20px;
+    margin-left: 15%;
+    border: 2px solid wheat;
+}
+
+li{
+    color: whitesmoke;
+}
+
+p{
+    display: inline-block;
+    
+}
+#Coffeimg{
+    float: left;
+    width: 12vw;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-top: 0;
 }
