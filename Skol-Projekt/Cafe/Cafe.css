@@ -8,10 +8,14 @@ h1{
     height: 5vh;
     margin-bottom: 5vh;
 }
+p{
+    margin: 0;
+    margin-right: 0;
+}
 
 #startimage{
-    width: 70vw;
-    height: 40vh;
+    width: 60vw;
+    height: 35vh;
 }
 
 .centerimg{
@@ -20,58 +24,187 @@ h1{
     margin-right: auto;
     margin-bottom: 0px;   
     border: 2px solid white;
-    border-radius: 30px;
-    height: 30vh;
+    border-radius: 20px;
+    width: 60vw;
+    height: auto;
 }
 
 
 .menu{
-    width: 51vw;
-    height: 20vh;
+    width: 50vw;
+    height: 25vh;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 25px;
+    
 }
 .coffee{
     width: 25vw;
     margin: 0 auto;
-    height: 30vh;
+    height: 25vh;
     float: left;
-    background-color: black;
 }
-.float{
-    display: flex;
+
+.textlist{
+    width: 15vw;
+    height: 25vh;
+    margin: 0;
 }
+.image{
+    width: 10vw;
+    height: 25vh;
+}
+.images{
+    margin-top: 1vh;
+    width: 10vw;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid white;
+
+}
+
+.textlist, .image{
+    float: left;
+}
+
 
 .tea{
     width: 25vw;
     margin: 0 auto;
-    height: 30vh;
+    height: 25vh;
     float: left;
-    background-color: white;
 }
 
 .menutitle{
     color: #ffa600;
+    margin-left: 0;
     margin-bottom: 1vh;
-    font-size: 20px;
-    margin-left: 15%;
-    border: 2px solid wheat;
+    font-size: 1.5em;
+    margin-left: 13%;
 }
 
 li{
     color: whitesmoke;
+    font-size: 1em;
 }
 
-p{
-    display: inline-block;
+
+.prices{
+    width: 60vw;
+    height: 50vh;
+    background-color: rgba(42,53,63,255);
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.table{
+    margin-top: 2vh;
+    color: white;
+    width: 50vw;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+th,td{
+    width: 40vh;
     
 }
-#Coffeimg{
-    float: left;
-    width: 12vw;
-    height: auto;
-    margin-left: 30px;
-    border-radius: 30px;
+th{
+    height: 10vh;
+}
+td{
+    height: 5vh;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: darkgray;
+}
+tr:nth-child(odd) {
+    background-color: rgb(101, 101, 101);
+}
+
+.muffinstor{
+    height: 5vh;
+    width: auto;
+}
+.muffinliten{
+    height: 4vh;
+    width: auto;
+}
+.pth{
+    font-size: 200px;
+}
+.title{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.7em;
+    color: #ffa600;
+    margin-bottom: 20px;
+}
+
+.endimg{
+    margin-top: 5vh;
+}
+.imgend{
+    margin-top: 1vh;
+    width: 60vw;
+    margin: auto 0;
+    border-radius: 20px;
     border: 2px solid white;
-    margin-top: 0;
+}
+
+hr{
+    margin-top: 5vh;
+    width: 60vw;
+    margin-bottom: 5vh;
+}
+
+
+
+.informationlist{
+    margin-top: 5vh;
+    width: 60vw;
+    height: auto;
+    background-color: #0015ff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.omoss{
+    width: 20vw;
+    max-height: 25vh;
+    float: left;
+}
+
+.foljoss{
+    width: 20vw;
+    max-height: 25vh;
+    float: left;
+}
+
+.information{
+    width: 20vw;
+    max-height: 25vh;
+    float: left;
+}
+
+.listtitle{
+    font-size: 1.3em;
+    font-style: italic;
+    color: #ffa600;
+    margin-bottom: 2vh;
+}
+.lista{
+    color: #a0abb5;
+    margin-bottom: 20px;
+}
+
+.socials{
+    width: 2vw;
+    height: auto;
+    margin: 5px;
 }
