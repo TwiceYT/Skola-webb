@@ -109,15 +109,18 @@ li{
 }
 
 
+table{
+    border-spacing: 0px;
+}
+
 th,td{
     width: 40vh;
-    
 }
 th{
-    height: 10vh;
+    height: 8vh;
 }
 td{
-    height: 5vh;
+    height: 4vh;
     text-align: center;
 }
 tr:nth-child(even) {
