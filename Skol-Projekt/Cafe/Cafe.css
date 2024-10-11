@@ -33,6 +33,7 @@ p{
 .menu{
     width: 46vw;
     height: 25vh;
+    max-height: 30vh;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -42,12 +43,14 @@ p{
     width: 23vw;
     margin: 0 auto;
     height: 25vh;
+    max-height: 30vh;
     float: left;
 }
 
 .textlist{
     width: 12vw;
     height: 25vh;
+    max-height: 30vh;
     margin: 0;
 }
 .image{
@@ -72,6 +75,7 @@ p{
     width: 23vw;
     margin: 0 auto;
     height: 25vh;
+    max-height: 35vh;
     float: left;
 }
 
