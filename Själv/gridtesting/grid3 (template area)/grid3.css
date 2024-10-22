@@ -1,0 +1,38 @@
+
+p{
+    color: wheat;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.item1, .item2, .item3, .item4{
+    background-color: red;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.container{
+    display: grid;
+    height: 98vh;
+    width: 98vw;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer';
+    gap: 15px;
+    margin: auto 0;
+}
+
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: main;
+}
+.item3{
+    grid-area: aside;
+}
+.item4{
+    grid-area: footer;
+}
