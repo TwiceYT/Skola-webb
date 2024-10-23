@@ -7,13 +7,40 @@
   <link rel="stylesheet" href="js1.css">
 </head>
 <body>
-  <div class="container">
-    <div id="div1" class="box">Innehåll i Div 1</div>
-    <div id="div2" class="box" style="display: none;">Innehåll i Div 2</div>
+
+  <div class="layout">
+    <!---->
+    <div class="header">
+      <h1>Welcome to Div Visibility Testing</h1>
+    </div>
+    <!---->
+    <div class="Sidebar">
+      <div class="buttons">
+        <div class="buttondetails">
+          <p>Click on those buttons to show the different divs!</p>
+        </div>
+        <li><button onclick="showDiv1()">Show Div1</button></li>
+        <li><button onclick="showDiv2()">Show Div2</button></li>
+        <li><button onclick="showDiv3()">Show Div3</button></li>
+        <li><button onclick="showDiv4()">Show Div4</button></li>
+      
+      </div>
+    </div>
+    <!--Different Divs-->
+    <div class="maincontent1" id="Div1">
+    </div>
+    <div class="maincontent2" id="Div2">
+    </div>
+    <div class="maincontent3" id="Div3">
+    </div>
+    <div class="maincontent4" id="Div4">
+    </div>
+    <!---->
+    <div class="footer">
+
+    </div>
+
   </div>
-<br>
-  <button onclick="showDiv1()">Visa Div 1</button>
-  <button onclick="showDiv2()">Visa Div 2</button>
 
   <script src="js1.js"></script>
 </body>
