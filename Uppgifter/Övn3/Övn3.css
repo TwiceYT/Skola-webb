@@ -1,0 +1,333 @@
+/*Uppgift1*/ 
+
+.box{
+    width: 45vw;
+    height: 30vh;
+    border: 2px solid black;
+}
+
+
+.green1{
+    background-color: green;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 1px solid black;
+}
+.red1{
+    background-color: red;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 1px solid black;
+}
+.blue1{
+    background-color: blue;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 1px solid black;
+}
+.yellow1{
+    background-color: yellow;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 1px solid black;
+}
+
+
+
+
+/*Uppgift 2*/
+
+.box{
+    width: 45vw;
+    height: 30vh;
+    border: 2px solid black;
+}
+
+.green2{
+    background-color: green;
+    height:10vw;
+    width: 10vw;
+    float: right;
+    border: 2px solid black;
+}
+.red2{
+    background-color: red;
+    height:10vw;
+    width: 10vw;
+    float: right;
+    border: 2px solid black;
+}
+.blue2{
+    background-color: blue;
+    height:10vw;
+    width: 10vw;
+    float: right;
+    border: 2px solid black;
+}
+.yellow2{
+    background-color: yellow;
+    height:10vw;
+    width: 10vw;
+    float: right;
+    border: 2px solid black;
+}
+
+
+/*Uppgift 3*/
+.box3{
+    width: 45vw;
+    height: 70vh;
+    border: 2px solid black;
+}
+
+.green3{
+    background-color: green;
+    height:10vw;
+    width: 10vw;
+    border: 2px solid black;
+}
+.red3{
+    background-color: red;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 2px solid black;
+}
+.blue3{
+    background-color: blue;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 2px solid black;
+}
+.yellow3{
+    background-color: yellow;
+    height:10vw;
+    width: 10vw;
+    clear: both;
+    border: 2px solid black;
+}
+
+/*Uppgift 4*/
+
+
+/*Uppgift 3*/
+.box4{
+    width: 45vw;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+.green4{
+    background-color: green;
+    height:10vw;
+    width: 10vw;
+    border: 2px solid black;
+    float: left;
+}
+.red4{
+    background-color: red;
+    height:10vw;
+    width: 10vw;
+    clear: left;
+    float: left;
+    border: 2px solid black;
+}
+.blue4{
+    background-color: blue;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 2px solid black;
+}
+.yellow4{
+    background-color: yellow;
+    height:10vw;
+    width: 10vw;
+    float: left;
+    border: 2px solid black;
+}
+
+
+
+
+
+/*LAYOUT UPPGIFTER*/
+
+hr{
+    margin: 10vh;
+}
+
+.layout1{
+    float: left;
+}
+.layout2{
+    float: left;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+/*LAYOUT 1*/
+
+
+
+.layout1{
+    width: 32vw;
+    height: 32vw;
+}
+.topbox{
+    width: 32vw;
+    height: 10vw;
+    background-color: burlywood;
+    margin-bottom: 1vw;
+}
+
+.boxsmall, .boxsmallmid{
+    width: 10vw;
+    height: 10vw;
+    background-color: burlywood;
+    float: left;
+}
+
+.boxsmallmid{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.bottenbox{
+    width: 32vw;
+    height: 10vw;
+    background-color: burlywood;
+    clear: both;
+}
+
+
+
+/*Layout 2*/
+
+.layout2{
+    width: 32vw;
+    height: 32vw;
+}
+.topbox2{
+    width: 32vw;
+    height: 10vw;
+    background-color: aquamarine;
+    margin-bottom: 1vw;
+}
+.leftbox2{
+    width: 10vw;
+    height: 21vw;
+    background-color: aquamarine;
+    float: left;
+}
+
+.boxsmallmid2{
+    width: 10vw;
+    height: 10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: aquamarine;
+    float: left;
+}
+
+.boxsmall2{
+    width: 10vw;
+    height: 10vw;
+    background-color: aquamarine;
+    float: left;
+    clear: right;
+}
+
+.bottenbox2{
+    width: 21vw;
+    height: 10vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    float: left;
+    background-color: aquamarine;
+}
+
+
+
+/*Layout 3*/
+
+
+.leftbox3{
+    width: 5vw;
+    height: 32vw;
+    background-color: greenyellow;
+    float: left;
+    margin-right: 1vw;
+}
+.topbox3{
+    width: 25vw;
+    height: 10vw;
+    background-color: greenyellow;
+    float: left;
+    clear: right;
+    margin-bottom: 1vw;
+}
+.boxsmallmid3{
+    width: 10vw;
+    height: 10vw;
+    margin-right: 1vw;
+    background-color: greenyellow;
+    float: left;
+}
+
+.boxsmallright3{
+    width: 14vw;
+    height: 10vw;
+    background-color: greenyellow;
+    float: left;
+    clear: right;
+}
+
+.bottenboxbig3{
+    width: 14vw;
+    height: 10vw;
+    background-color: greenyellow;
+    float: left;
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+.bottenboxsmall3{
+    width: 10vw;
+    height: 10vw;
+    background-color: greenyellow;
+    float: left;
+    clear: right;
+    margin-top: 1vw;
+}
+
+
+/*Finished*/
+
+a{
+    display: block;
+    align-items: center !important;
+    text-align: center;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    text-decoration: none;
+    color: #5fcc80;
+    font-size: 16px;
+
+}
+
+a:hover{
+    text-decoration:underline;
+    text-decoration-color: rgb(120, 167, 209);
+}
+
+
+

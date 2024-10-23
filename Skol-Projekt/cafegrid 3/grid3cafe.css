@@ -1,0 +1,244 @@
+body{
+    background-color: #3a4a58;
+}
+
+/*GRID SYSTEMS*/
+.layout{
+    display: grid;
+    height: 200vh;
+    width: 98vw;
+    grid-template-rows: 0.5fr 1.25fr 1fr 1.5fr 1fr 0.7fr;
+    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+    gap: 15px;
+}
+
+.titles{
+    grid-area: 1/ 2/ 1 / 5;
+}
+
+.starterimg{
+    grid-area: 2/ 2/ 2 / 5;
+    
+}
+
+.menu{
+    grid-area: 3 / 2/ 3 / 5;
+
+    display: grid;
+    grid-template-rows: 1.5fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.coffemenu{
+    grid-area: 1 / 1 / 2/ 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'list Img';
+}
+
+.coffelist{
+    grid-area: list;
+}
+
+.coffeimg{
+    grid-area: Img;
+}
+
+.teamenu{
+    grid-area: 1 / 2 / 2/ 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'list Img';
+}
+
+.tealist{
+    grid-area: list;
+}
+
+.teaimg{
+    grid-area: Img;
+}
+
+.prices{
+    grid-area: 4/ 2 / 5 / 5;
+}
+
+.endimg{
+    grid-area: 5 / 2 / 6 / 5;
+}
+
+.botteninfo{
+    grid-area: 6 / 2 / 7 / 5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'om socials information'
+    ;
+}
+
+.omoss{
+    grid-area: om;
+}
+
+.socials{
+    grid-area: socials;
+}
+
+.informationslista{
+    grid-area: information;
+}
+
+
+/* Class managements */
+
+.titles{
+    text-align: center;
+    color: orange;
+}
+
+.starter{
+    height: auto;
+    width: 100%;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.menutitle{
+    color: orange;
+    font-size: 1.2em;
+}
+
+
+
+.coffelist, .tealist{
+    font-size: 1.1em;
+    margin-left: 2vw;
+    color: white;
+}
+
+.menus{
+    list-style-type: circle;
+}
+
+
+.coffeimg{
+    margin: 0 auto;
+}
+
+.menuimg{
+    height: auto;
+    width: 14vw;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+
+
+
+
+.table{
+    margin-top: 2vh;
+    color: rgb(84, 84, 84);
+    width: 50vw;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+table{
+    border-spacing: 0px;
+}
+
+th,td{
+    width: 40vh;
+}
+th{
+    height: 8vh;
+}
+td{
+    height: 4vh;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: darkgray;
+}
+tr:nth-child(odd) {
+    background-color: rgb(148, 148, 148);
+}
+
+.muffinstor{
+    height: 5vh;
+    width: auto;
+}
+.muffinliten{
+    height: 4vh;
+    width: auto;
+}
+.pth{
+    font-size: 200px;
+}
+.title{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.7em;
+    color: #ffa600;
+    margin-bottom: 20px;
+}
+.prices{
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    background-color: rgba(42,53,63,255);
+}
+.table{
+    margin: 0 auto;
+}
+
+.endimg{
+    margin: 0 auto;
+}
+.endimage{
+    height: auto;
+    width: 58vw;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+
+.bottentitel{
+    color: orange;
+    font-size: 1.3em;
+}
+
+.lista{
+    color: #a0abb5;
+    list-style-type: none;
+}
+
+.omoss{
+    text-align: center;
+}
+
+.socials{
+    text-align: center;
+}
+.socialimg{
+    width: 2vw;
+    height: auto;
+    margin: 5px;
+}
+
+.informationslista{
+    text-align: center;
+}
+
