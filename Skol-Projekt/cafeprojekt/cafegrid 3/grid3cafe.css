@@ -103,6 +103,7 @@ body{
 .titles{
     text-align: center;
     color: orange;
+    font-size: 1vw;
 }
 
 .starter{
@@ -115,13 +116,13 @@ body{
 
 .menutitle{
     color: orange;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 
 
 
 .coffelist, .tealist{
-    font-size: 1.1em;
+    font-size: 1.2vw;
     margin-left: 2vw;
     color: white;
 }
@@ -159,6 +160,7 @@ table{
 
 th,td{
     width: 40vh;
+    font-size: 1.2vw;
 }
 th{
     height: 8vh;
@@ -188,7 +190,7 @@ tr:nth-child(odd) {
 .title{
     text-align: center;
     margin: 10px;
-    font-size: 1.7em;
+    font-size: 1.5vw;
     color: #ffa600;
     margin-bottom: 20px;
 }
@@ -214,13 +216,15 @@ tr:nth-child(odd) {
 
 .bottentitel{
     color: orange;
-    font-size: 1.3em;
+    font-size: 1.3vw;
 }
 
 .lista{
+    font-size: 1vw;
     color: #a0abb5;
     list-style-type: none;
 }
+
 
 .omoss{
     text-align: center;
@@ -238,4 +242,5 @@ tr:nth-child(odd) {
 .informationslista{
     text-align: center;
 }
+
 
