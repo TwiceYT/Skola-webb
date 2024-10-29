@@ -1,0 +1,115 @@
+body{
+    margin: 0 auto;
+}
+
+.layout{
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-areas: 
+    'header header reklam'
+    'lefted content reklam'
+    'footer footer footer'
+    ;
+}
+
+.headern{
+    grid-area: header;
+    background-color: rgb(255, 80, 80);
+
+    font-size: 3vh;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reklam{
+    grid-area: reklam;
+    background-color: yellow;
+}
+
+.sidebarleft{
+    grid-area: lefted;
+    background-color: lightgreen;
+}
+
+.footern{
+    grid-area: footer;
+    background-color: grey;
+}
+
+.nav {
+    font-size: 3vh;
+    width: 10vw;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: white;
+    padding: 1vh; /* Adds a little padding inside the container */
+}
+
+.nav2 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold; /* Keep the heading bold */
+}
+
+.Navig {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: blue;
+    cursor: pointer;
+}
+
+.Navig li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Slight line height adjustment to reduce space */
+}
+
+.navtxt{
+    font-weight: bold;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+.bolded{
+    font-weight: bold;
+}
+.bolded2{
+    font-weight: bold;
+    margin-top: 10vh;
+}
+
+.banan{
+    border: 2px solid black;
+}
+
+
+
+.contentbanan, .contentapelsin, .contentapple{
+    grid-area: content;
+    background-color: white;
+}
+
+.contentbanan{
+    z-index: 1;
+}
+.contentapelsin{
+    z-index: 2;
+}
+
+.apple{
+    width: 20vw;
+    height: auto;
+}
