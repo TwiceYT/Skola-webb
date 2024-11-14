@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(228, 222, 222);
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 60vh 78vh 42vh 10vh 1fr;
+    grid-template-areas:
+    'title'
+    'pers-uppg'
+    'ovrinfo'
+    'preferens'
+    'button'
+    'bottom'
+    ;
+    justify-content: center;
+    background-color: white;
+    width: 70vw;
+}
+
+header{
+    grid-area: title;
+    color: rgb(15, 182, 188);
+    text-align: center;
+}
+
+.person-uppgifter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    'toppen'
+    'botten';
+    grid-area: pers-uppg;
+    background-color: #f9f9f9;
+    margin: 2vw;
+    border-radius: 20px;
+    border: 1px solid rgb(198, 193, 193);
+}
+
+.toppers{
+    grid-area: toppen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2vw;
+}
+
+.titles{
+    position: relative;
+    bottom: 11vh;
+    color: rgb(15, 182, 188);
+    margin-left: 3vw;
+    font-size: 4vh;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 1vw;
+}
+
+.botters{
+    grid-area: botten;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2vw;
+}
+
+.anvandare{
+    width: auto;
+    height: 5vh;
+    display: inline-flex;
+}
