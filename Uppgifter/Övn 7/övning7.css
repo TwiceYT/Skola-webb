@@ -1,0 +1,46 @@
+body {
+    font-family:Calibri, Verdana, Arial, Helvetica, sans-serif;
+    }
+    .container {
+        width:4000px;
+        padding:100px;
+            margin:auto;
+            background-color:#fff;
+    }
+    article {
+        background-color: #f66;
+        color: white;
+        padding:300px;
+        border-top:10px solid #333;
+        font-size: 100px;
+        
+    }
+    h1 {
+        margin:0px;
+        padding:0px;
+    }
+    nav {
+        padding:200px;
+        background-color:#0F3;
+    }
+    /* Länk design */
+    nav a {
+        margin: 0px -3px;
+        text-align: center;
+        padding: 100px 150px;
+        text-decoration: none;
+        font-size: 150px;
+        border: 10px solid #333;
+        background-color: #ccc;
+        color: #000;
+        position: relative; top: 109px;
+    }
+    nav a:hover
+    {
+        background-color: #fff;
+    }
+    nav a:focus
+    {
+        background-color: #f66;
+        border-bottom: #f66;
+    }

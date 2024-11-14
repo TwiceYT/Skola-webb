@@ -1,0 +1,191 @@
+*{
+    background-color: rgba(26,23,18,255);
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3vw 1fr 5vw;
+    grid-template-rows: 15vh 1fr 10vh;
+    height: 98vh;
+    width: 99vw;
+    grid-template-areas:
+    'nav nav corner' 
+    'leftside content rightside'
+    'bottoms bottoms bottoms'
+    ;
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 25vw 70vw;
+    grid-template-rows: 15vh;
+    grid-template-areas:
+    'img nav'
+    ;
+
+
+    font-size: 2.5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    margin-right: 5vw;
+    margin-top: 1.5vh;
+}
+
+.navs:hover{
+    text-decoration: underline beige;
+}
+
+.nav{
+    grid-area: nav;
+}
+.neteor{
+    grid: img;
+    width: 10vw;
+    height: auto;
+    margin-top: 1vh;
+    margin-left: 7vw;
+}
+
+.navs{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3vw;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.red{
+    color: red;
+    font-size: 2.3vh;
+}
+
+.lefttxt{
+    grid-area: leftside;
+    writing-mode:vertical-rl;
+    color: orange;
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'texts joedoe'
+    ;
+}
+.texts{
+    grid-area: texts;
+    color: whitesmoke;
+    font-size: 3vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-family: serif;
+}
+.am{
+    color: red;
+}
+.joe{
+    font-size: 10vh;
+    padding: 0px;
+    margin: 100px;
+}
+.designer{
+    color: red;
+}
+span{
+    color: white;
+}
+
+.sideimg{
+    grid-area: joedoe;
+}
+.joeimg{
+    grid-area: joedoe;
+    height: 70vh;
+    width: auto;
+}
+
+
+.socials{
+    grid-area: rightside;
+    margin-top: 25vh;
+}
+.socialimg{
+    width: 3vw;
+    height: auto;
+    margin-top: 5vh;
+}
+.socialimg:hover{
+    border: 2px solid red;
+}
+
+
+    .about-button {
+        background-color: transparent; /* Transparent background */
+        border: 2px solid red; /* Thin red border */
+        color: whitesmoke; /* Text color */
+        font-family: Arial, sans-serif; /* Font for the text */
+        font-size: 2vh; /* Adjust font size */
+        padding: 30px 50px; /* Padding around the text */
+        border-radius: 30px 10px 30px 10px; /* Rounded corners: top-right, bottom-right, and top-left */
+        text-transform: uppercase; /* Uppercase text */
+        cursor: pointer; /* Pointer cursor on hover */
+        outline: none; /* Removes default outline on focus */
+        margin-top: 5vh;
+    }
+    
+    .about-button:hover {
+        color: red; /* Change text color on hover */
+        background-color: rgba(255, 0, 0, 0.1); /* Slight background change on hover */
+    }
+    
+
+.bottom{
+    margin-left: 3vw;
+    color: azure;
+    grid-area: bottoms;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw) 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'exp proj clients rest';
+    height: 100%;
+    min-height: 5vh; /* Adjust the height as needed */
+    
+    
+}
+
+
+.experience{
+    grid-area: exp;
+    font-size: 1vh;
+}
+
+.clients{
+    grid-area: proj;
+}
+
+.projects{
+    grid-area: clients;
+}
+
+.titles{
+    font-size: 3vh;
+    color: red;
+}
+.number{
+    font-size: 4vh;
+    margin-left: 2vw;
+}
+.titles, .number {
+    margin: 0;
+    padding: 0;
+}
