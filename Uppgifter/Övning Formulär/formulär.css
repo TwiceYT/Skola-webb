@@ -46,6 +46,10 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'first second'
+    'third foruth'
+    ;
     margin: 2vw;
 }
 
@@ -69,6 +73,8 @@ header{
 }
 
 .anvandare{
+    grid-area: first;
+    display: inline;
     width: auto;
     height: 5vh;
     display: inline-flex;
