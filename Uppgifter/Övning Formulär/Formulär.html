@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-
+<form>
         <header>
             <h1>Formulärövningar i Webb-Utveckling - Uppgift 2</h1>
         </header>
@@ -17,26 +17,117 @@
             <div class="toppers">
                 <p class="titles">Person Uppgifter</p>
                 <div class="anvandare">
-                    <label for="form">Användare:</label><br>
-                    <input type="text" placeholder="Användarnamn">
+                    <label for="form">Användarnamn:</label>
+                    <input type="text" placeholder="Ange användarnamn">
+                </div>
+                <div class="losenord">
+                    <label for="form">Lösenord:</label>
+                    <input type="password" placeholder="Ange lösenord">
+                </div>
+                <div class="fornamn">
+                    <label for="form">Förnamn:</label>
+                    <input type="text" placeholder="Ange förnanmn">
+                </div>
+                <div class="efternams">
+                    <label for="form">Efternamn:</label>
+                    <input type="text" placeholder="Ange efternamn">
                 </div>
 
             </div>
+
             <div class="botters">
+
+                <div class="adress">
+                    <label for="form">Adress:</label>
+                    <input type="text" placeholder="Ange adress" class="longinput">
+                </div>
+                <div class="postnummer">
+                    <label for="form">Postnummer:</label>
+                    <input type="text" placeholder="Ange postnummer" class="longinput">
+                </div>
+                <div class="telefonnr">
+                    <label for="form">Telefon nr.:</label>
+                    <input type="tel" placeholder="070-123456" class="longinput">
+                </div>
 
             </div>
         </section>
 
         <section class="information">
+            <p class="titles">Övrig Information</p>
+
+            <div class="land">
+                <label for="form">Land:</label>
+                <input type="text" placeholder="" class="longinput">
+            </div>
+            <div class="datum">
+                <label for="form">Födelsedag:</label>
+                <input type="date" placeholder="" class="longinput">
+            </div>
+            <div class="epost">
+                <label for="form">Epost:</label>
+                <input type="email" placeholder="E-post adress" class="longinput">
+            </div>
+            <div class="varde">
+                <label for="form">Värde(1-100):</label>
+                <div class="range-container">
+                    <!-- Range Slider -->
+                    <input type="range" min="1" max="100" value="50" class="slider" id="rangeInput" value="#ff0000">
+                  
+                    <!-- Value Display -->
+                    <div class="value-display" id="rangeValue">50</div>
+            </div>
+            </div>
+            <div class="tid">
+                <label for="form">Tid:</label>
+                <input type="time" class="tidinput">
+            </div>
+            <div class="message">
+                <label for="form">Meddelande:</label>
+                <input type="text" placeholder="" class="msginput">
+            </div>
 
         </section>
 
         <section class="preferens">
+            <p class="titles">Preferenser</p>
+            <div class="form-group">
+                <p class="formtitle">Favoritspråk:</p>
+                <!-- Radio buttons for language selection -->
+                <label for="html">HTML:</label><br>
+                <input type="radio" id="html" name="language" value="HTML" class="sprak">
+
+                <label for="css">CSS:</label><br>
+                <input type="radio" id="css" name="language" value="CSS" class="sprak">
+                
+                <label for="javascript">JavaScript:</label><br>
+                <input type="radio" id="javascript" name="language" value="JavaScript" class="sprak">
+              </div>
+              
+              <div class="form-group2">
+                <!-- Checkbox for newsletter subscription -->
+                <p class="sub">Prenumerera på nyhetsbrev</p>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+              </div>
 
         </section>
+    </form>
 
-        <div class="submit-btn"></div>
+
+        <div class="submit-btn">
+            <button class="Submit">Submit</button>
+        </div>
 
     </div>
+
+
+    <script>
+        const rangeInput = document.getElementById("rangeInput");
+        const rangeValue = document.getElementById("rangeValue");
+        rangeInput.addEventListener("input", function() {
+          rangeValue.textContent = rangeInput.value;
+        });
+      </script>
 </body>
 </html>
