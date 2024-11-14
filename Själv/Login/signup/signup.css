@@ -1,0 +1,95 @@
+body {
+    /* Background gradient */
+    background: linear-gradient(135deg, #2d8fd5, #9c27b0);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional animation for a subtle background effect */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.signin{
+    background-color: white;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: 1.5fr 1.3fr 1.3fr 1.3fr 1.5fr 1.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'Title'
+    'Username'
+    'Email'
+    'Password'
+    'Submit'
+    'Footer'
+    ;
+}
+
+.title{
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.username{
+    grid-area: Username;
+    font-size: 1.5vh;
+    margin: 0 auto;
+}
+
+.email{
+    grid-area: Email;
+    font-size: 1.5vh;
+    margin: 0 auto;
+}
+
+.password{
+    grid-area: Password;
+    font-size: 1.5vh;
+    margin: 0 auto;
+}
+
+.inputs{
+    width: 15vw;
+    height: 4vh;
+    border-radius: 0px;
+    border: none;
+    background-color: lightgray;
+    font-size: 1.5vh;
+}
+
+.button{
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.Submit{
+    width: 15vw;
+    height: 3vh;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2;
+}
+
+.footer{
+    grid-area: Footer;
+    margin: 0 auto;
+    margin-top: 1.5vh;
+    font-size: 1vh;
+}
+
+a{
+    color: rgb(89, 89, 89);
+    font-size: 1vh;
+}
