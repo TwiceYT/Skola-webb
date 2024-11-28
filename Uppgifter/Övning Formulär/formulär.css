@@ -7,7 +7,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 60vh 78vh 25vh 10vh;
+    grid-template-rows: 10vh 60vh 78vh 45vh 40vh;
     grid-template-areas:
     'title'
     'pers-uppg'
@@ -17,7 +17,9 @@ body{
     ;
     justify-content: center;
     background-color: white;
-    width: 70vw;
+    width: 80vw;
+    height: 225vh;
+
 }
 
 
@@ -66,7 +68,8 @@ header{
     font-size: 4vh;
     font-weight: bold;
     background-color: #f9f9f9; /* Match background to section color */
-    padding: 0 0.5vw; /* Small padding for a cleaner look */
+    padding: 0.2vw 0.2vw 0.2vw; /* Small padding for a cleaner look */
+    border: 2px solid rgb(198, 193, 193);
 }
 
 .botters {
@@ -93,6 +96,7 @@ header{
     width: auto;
 }
 
+
 input{
     height: 3vh;
     border: 2px solid gray;
@@ -106,6 +110,18 @@ input{
     width: auto;
 }
 
+.fornamn{
+    grid-area: third;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.efternams{
+    grid-area: fourth;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
 .adress{
     grid-area: adress;
     display: flex;
@@ -131,7 +147,7 @@ input{
     margin-top: 1vh;
 }
 .longinput{
-    width: 61vw;
+    width: 66vw;
 }
 .msginput{
     width: 61vw;
@@ -234,16 +250,17 @@ input{
     width: 80vw;
     height: auto;
     color: black;
+    z-index: -1;
 }
+
 .Submit{
-    display: flex;
-    width: 5vw;
-    height: 4vh;
-    margin-top: 5vh;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 3vh;
     color:white;
-    background-color: aquamarine;
+    background-color: rgb(47, 177, 133);
     border: none;
-    margin-left: 48%;
+    margin-left: 44%;
 }
 
 
@@ -292,7 +309,7 @@ input{
 
   /* Display the range value */
   .value-display {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     font-size: 1.2em;
     color: #333;

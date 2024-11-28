@@ -1,0 +1,43 @@
+*{
+    background-color:rgb(141, 169, 195);
+    height: 20vh;
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    height: 200vh;
+    grid-template-rows: 40vh 40vh 55vh 7vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'Head'
+    'content1'
+    'sections'
+    'footer'
+    ;
+    margin: 0 auto;
+}
+
+/*Header Content*/
+header{
+    grid-area: Head;
+}
+
+.topimg{
+    width: 80vw;
+    height: 20vh;
+}
+
+/*nav*/
+
+nav, .navbg{
+    margin-top: -0.9vh;
+    height: 10vh;
+    width: 80vw;
+}
+.navbg{
+width: 80vw;
+}
+li{
+    color: white;
+}
