@@ -1,0 +1,66 @@
+*{
+    background-color:rgb(141, 169, 195);
+    height: 20vh;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    height: 200vh;
+    grid-template-rows: 30vh 10vh 40vh 55vh 7vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'Head'
+    'navbar'
+    'content1'
+    'sections'
+    'footer'
+    ;
+    margin: 0 auto;
+}
+
+/*Header Content*/
+header{
+    grid-area: Head;
+    height: 30vh;
+}
+
+.topimg{
+    width: 80vw;
+    height: 30vh;
+    margin-left: 0 auto;
+}
+
+/*nav*/
+
+nav{
+    grid-area: navbar;
+    height: 9.7vh;
+    width: 80vw;
+    background-image: url("blackback_10x74.gif");
+    z-index: 1;
+}
+.navimg{
+    width: 80vw;
+    height: 10vh;
+    margin-top: 1vh; 
+    float: left;
+    z-index: 3;
+}
+.spelforum{
+    width: auto;
+    height: 9.7vh;
+    margin-top: 0vh;
+    float: left;
+}
+
+ul, li{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    color: white;
+    height: 10vh;
+    z-index: 2;
+text-align: center;
+}
