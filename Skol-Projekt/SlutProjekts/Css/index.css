@@ -8,7 +8,7 @@
     display: grid;
     width: 80vw;
     height: 200vh;
-    grid-template-rows: 30vh 10vh 40vh 55vh 7vh;
+    grid-template-rows: 30vh 10vh 51vh 55vh 7vh;
     grid-template-columns: 1fr;
     grid-template-areas: 
     'Head'
@@ -18,6 +18,7 @@
     'footer'
     ;
     margin: 0 auto;
+    gap: 1vh;
 }
 
 /*Header Content*/
@@ -38,29 +39,69 @@ nav{
     grid-area: navbar;
     height: 9.7vh;
     width: 80vw;
-    background-image: url("blackback_10x74.gif");
-    z-index: 1;
-}
-.navimg{
-    width: 80vw;
-    height: 10vh;
-    margin-top: 1vh; 
-    float: left;
-    z-index: 3;
+    background-image: url("/Skol-Projekt/SlutProjekts/img/blackback_10x74.gif");
+    z-index: 0;
 }
 .spelforum{
     width: auto;
     height: 9.7vh;
-    margin-top: 0vh;
-    float: left;
 }
 
 ul, li{
+    height: 100%;
     display: inline-block;
     position: relative;
     margin: 0;
     color: white;
     height: 10vh;
     z-index: 2;
-text-align: center;
+    text-align: center;
+}
+
+
+
+
+
+/*Content*/
+
+.content{
+    grid-area: content1;
+    display: grid;
+    grid-template-columns: 53vw 26vw;
+    grid-template-rows: 40% 59%;
+    grid-template-areas: 
+    'ps medlem'
+    'ps threads'
+    ;
+    width: 80vw;
+    height: 100%;
+    gap: 1vh;
+}
+
+.articeps6{
+    grid-area: ps;
+    background-color: black;
+    height: 100%;
+}
+.ps6img{
+    height: 100%;
+    width: 100%;
+}
+.aside1{
+    grid-area: medlem;
+}
+.anvandare{
+
+}
+.anvandareinput{
+    margin: 0 auto;
+    height: 3vh;
+    width: 40%;
+}
+
+
+.aside2{
+    grid-area: threads;
+    background-color: red;
+    height: 100%;
 }
