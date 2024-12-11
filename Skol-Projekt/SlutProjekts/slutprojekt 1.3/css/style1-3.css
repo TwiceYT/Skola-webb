@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c5d4e4;
+}
+.banner{
+    width: 80vw;
+    margin: 0 auto;
+}
+.bannerimg{
+    width: 80vw;
+}
+nav {
+    display: flex;
+    background-image: url("/Skol-Projekt/slutprojek1.2/img/blackback_10x74.gif");
+    font-size: 1.5vw;
+    height: 9.8vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: -1vh;
+}
+
+nav a {
+    display: flex;
+    justify-content: right;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+nav a:hover {
+    background-color: #536f8c;
+}
+
+nav input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.search{
+    margin-right: 5vw;
+    height: 7.1vh;
+    margin-top: 2vh;
+}
+.current{
+    background-color: #536f8c;
+    border-bottom: 1vh solid #295f99;
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    height: 9vh;
+    margin-top: 0.4vh;
+}
+
+
+.main{
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+.sectionmain{
+    float: left;
+    
+}
+.mainimg{
+    width: 58vw;
+    margin-right: 1vw;
+}
+
+.sidebar {
+    background-color: #536f8c;
+    width: 19.5vw;
+    height: 24.5vw;
+    float: left;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+.sidebar form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.sidebar input[type="text"],
+.sidebar input[type="password"] {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.sidebar button {
+    width: 85%;
+    padding: 8px;
+    background-color: #354a60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #536f8c;
+}

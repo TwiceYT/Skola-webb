@@ -18,8 +18,8 @@ body {
 
 .signin{
     background-color: white;
-    height: 50vh;
-    width: 20vw;
+    height: 70vh;
+    width: 25vw;
     border-radius: 20px;
 
     display: grid;
@@ -43,29 +43,29 @@ body {
 
 .username{
     grid-area: Username;
-    font-size: 1.5vh;
+    font-size: 2.3vh;
     margin: 0 auto;
 }
 
 .email{
     grid-area: Email;
-    font-size: 1.5vh;
+    font-size: 2.3vh;
     margin: 0 auto;
 }
 
 .password{
     grid-area: Password;
-    font-size: 1.5vh;
+    font-size: 2.3vh;
     margin: 0 auto;
 }
 
 .inputs{
-    width: 15vw;
-    height: 4vh;
+    width: 20vw;
+    height: 6vh;
     border-radius: 0px;
     border: none;
     background-color: lightgray;
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 
 .button{
@@ -75,7 +75,7 @@ body {
 
 .Submit{
     width: 15vw;
-    height: 3vh;
+    height: 6vh;
     background-color: rgb(24, 24, 24);
     color: white;
     font-weight: bold;
@@ -86,7 +86,7 @@ body {
     grid-area: Footer;
     margin: 0 auto;
     margin-top: 1.5vh;
-    font-size: 1vh;
+    font-size: 2vh;
 }
 
 a{

@@ -90,9 +90,6 @@ ul, li{
 .aside1{
     grid-area: medlem;
 }
-.anvandare{
-
-}
 .anvandareinput{
     margin: 0 auto;
     height: 3vh;

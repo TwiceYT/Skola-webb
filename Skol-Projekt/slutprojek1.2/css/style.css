@@ -35,6 +35,14 @@
             padding: 5px;
         }
 
+        .banner{
+            width: 100vw;
+            height: 20vh;
+        }
+        .banners{
+            width: 100vw;
+        }
+
         .main-content {
             display: flex;
             flex-wrap: wrap;
