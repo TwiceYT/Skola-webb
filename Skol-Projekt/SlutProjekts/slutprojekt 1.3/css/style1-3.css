@@ -3,59 +3,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #c5d4e4;
 }
-.banner{
-    width: 80vw;
-    margin: 0 auto;
-}
-.bannerimg{
-    width: 80vw;
-}
-nav {
-    display: flex;
-    background-image: url("/Skol-Projekt/slutprojek1.2/img/blackback_10x74.gif");
-    font-size: 1.5vw;
-    height: 9.8vh;
-    width: 80vw;
-    margin: 0 auto;
-    margin-top: -1vh;
-}
-
-nav a {
-    display: flex;
-    justify-content: right;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    margin-top: 1vh;
-}
-
-nav a:hover {
-    background-color: #536f8c;
-}
-
-nav input[type="text"] {
-    margin-left: auto;
-    padding: 5px;
-}
-
-.search{
-    margin-right: 5vw;
-    height: 7.1vh;
-    margin-top: 2vh;
-}
-.current{
-    background-color: #536f8c;
-    border-bottom: 1vh solid #295f99;
-}
-.logo{
-    display: flex;
-    justify-content: left;
-    height: 9vh;
-    margin-top: 0.4vh;
-}
-
-
 .main{
     width: 80vw;
     margin: 0 auto;
@@ -63,21 +10,25 @@ nav input[type="text"] {
 }
 .sectionmain{
     float: left;
+    margin-bottom: 2vh;
     
 }
 .mainimg{
-    width: 58vw;
+    width: 53vw;
     margin-right: 1vw;
 }
 
 .sidebar {
-    background-color: #536f8c;
-    width: 19.5vw;
-    height: 24.5vw;
+    background-color: white;
+    width: 24.4vw;
+    height: 21.9vw;
     float: left;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     float: left;
+    color: black;
+    font-size: 2vh;
+    text-align: center;
 }
 .sidebar form {
     margin: 0 auto;
@@ -91,15 +42,131 @@ nav input[type="text"] {
     padding: 8px;
 }
 
-.sidebar button {
-    width: 85%;
+.sidebar button{
+    width: 90%;
     padding: 8px;
     background-color: #354a60;
     color: white;
     border: none;
     cursor: pointer;
 }
+.creacc{
+ color: #354a60 ;
+}
+
+.creacc:hover{
+    color: #678db6;
+    text-shadow: #c5d4e4;
+}
 
 .sidebar button:hover {
     background-color: #536f8c;
 }
+.trådar{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 2vh;
+}
+h3{
+    background-color: black;
+    color: white;
+    font-size: 2.4vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+span{
+    background-color: #536f8c;
+    width: 90%;
+}
+
+
+.cards{
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 85vh;
+}
+.card-nyheter, .card-reviews, .card-hårdvara{
+    height: 85vh;
+    width: 26vw; 
+    background-color: aliceblue;
+    float: left;
+}
+.card-reviews{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.cardtitle{
+    background-color: black;
+    color: white;
+    font-size: 2.6vh;
+    margin-top: 0vh;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+
+}
+
+.cardbanner{
+    margin-top: 1vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.titles{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1vh;
+    font-size: 3.5vh;
+}
+.titles2{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 3.5vh;
+    margin-bottom: 1.8vh;
+}
+
+.text{
+    width: 90%; 
+    margin: 0 auto;
+    font-size: 2.4vh;
+}
+hr{
+    width: 90%;
+    height: 2px;
+    background-color: yellow;
+
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 auto; 
+    margin-top: 1vw;
+    width: 77vw;
+}
+
+.domain {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.domain p {
+    margin: 0; 
+    font-size: 1em; 
+    flex: 1; 
+    text-align: center;
+}
+
+

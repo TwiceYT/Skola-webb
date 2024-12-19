@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c5d4e4;
+}
+.banner{
+    width: 80vw;
+    margin: 0 auto;
+}
+.bannerimg{
+    width: 80vw;
+}
+nav {
+    display: flex;
+    align-items: center; 
+    background-image: url("/Skol-Projekt/slutprojek1.2/img/blackback_10x74.gif");
+    background-repeat: repeat-x;
+    background-size: auto; 
+    background-position: bottom; 
+    font-size: 1.5vw;
+    height: 10vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: -1vh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+
+nav a {
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 0; 
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    height: 9.9vh;
+}
+
+
+nav a:hover {
+    background-color: #536f8c;
+    border-bottom: 1vh solid red;
+    height: 5.5vh;
+}
+
+nav input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.search{
+    margin-right: 5vw;
+    height: 7.1vh;
+    margin-top: 2vh;
+}
+.current{
+    background-color: #536f8c;
+    border-bottom: 1vh solid #295f99;
+    height: 5.5vh;
+}
