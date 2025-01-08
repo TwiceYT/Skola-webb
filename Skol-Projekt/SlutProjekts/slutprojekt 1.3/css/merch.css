@@ -1,25 +1,86 @@
 .content{
     width: 80vw;
-    height: auto;
+    height: 200vh;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
 }
 
+
+
+.dropbtn {
+    display: flex;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 9%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+
 .doublecard{
     margin: 0 auto;
     width: 80vw;
-    height: 40vw;
+    margin-top: 10vh;
 }
 
 .bigcard{
     width: 38vw;
-    height: 50vh;
+    height: 70vh;
     border: 1px solid black;
     margin: 2vh;
     float: left;
+    box-shadow: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .bigcardimg{
     width: 36vw;
-    height: 30vh;
+    height: 40vh;
     margin: 1vw;
+}
+.big-title{
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: -0.8vh;
+}
+.big-bottomtxt{
+    font-size: 1vw;
+    text-align: center;
+}
+.buy{
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    display: block; 
+    margin: 0 auto;
+    font-size: 16px;
 }
