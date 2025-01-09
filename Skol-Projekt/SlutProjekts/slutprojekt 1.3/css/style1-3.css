@@ -65,8 +65,10 @@ body {
 .trådar{
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    font-size: 2vh;
+    font-size: 2.4vh;
+    width: 80%;
+    margin: 0 auto;
+
 }
 h3{
     background-color: black;
@@ -78,7 +80,7 @@ h3{
 }
 span{
     background-color: #536f8c;
-    width: 90%;
+    width: 100%;
 }
 
 

@@ -1,11 +1,18 @@
 .content{
     width: 80vw;
-    height: 200vh;
+    height: 210vh;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
 }
 
-
+.contentnavbar{
+  margin: 0 auto;
+  width: 78vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: 1fr;
+  gap: 1vw;
+}
 
 .dropbtn {
     display: flex;
@@ -23,6 +30,9 @@
   
   .dropdown-content {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -45,21 +55,28 @@
 
 .doublecard{
     margin: 0 auto;
-    width: 80vw;
-    margin-top: 10vh;
+    width: 78vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1vw;
 }
 
 .bigcard{
-    width: 38vw;
+    margin: 0 auto ;
+    width: 37vw;
     height: 70vh;
     border: 1px solid black;
-    margin: 2vh;
     float: left;
     box-shadow: 2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh; /* Adds padding inside the card */
 }
+
 .bigcardimg{
-    width: 36vw;
+    width: 35vw;
     height: 40vh;
     margin: 1vw;
 }
@@ -82,5 +99,76 @@
     list-style-type: none;
     display: block; 
     margin: 0 auto;
-    font-size: 16px;
+}
+
+.triplecard {
+  margin: 0 auto;
+  width: 78vw;
+  height: auto;
+  margin-top: 1vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
+  gap: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.card {
+  height: 55vh;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh; /* Adds padding inside the card */
+  background-color: white; /* Optional: Makes the card background white */
+}
+
+.smolcardimg{
+  width: 22vw;
+  margin: 1vw;
+}
+
+.smol-title{
+  font-size: 1.7vw;
+  text-align: center;
+  margin-top: -4vh;
+}
+.smol-bottomtxt{
+  font-size: 1vw;
+  margin-top: -4vh;
+  text-align: center;
+}
+
+.footertxt{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  float: left;
+  clear: right;
+}
+.footertxt-special{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  float: left;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-left: 1px solid black;
+  border-right: 1px solid black; 
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+footer{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  margin-top: -3.5vh;
+}
+
+.footerhr{
+  width: 70vw;
+  border: 1px solid black;
+  margin-top: 5vh;
 }
