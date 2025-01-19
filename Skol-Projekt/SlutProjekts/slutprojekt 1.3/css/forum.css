@@ -1,7 +1,7 @@
 
 .content{
     margin: 0 auto;
-    height: 136vh;
+    height: 132vh;
     background-color: rgb(169, 165, 165);
     width: 80vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -9,13 +9,13 @@
 
 .gridsystem{
     margin: 0 auto;
-    height: 134vh;
+    height: 132vh;
     background-color: rgb(169, 165, 165);
     width: 78vw;
     margin: 1vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 80vh 35vh 10vh;
+    grid-template-rows: 10vh 80vh 35vh 6vh;
     grid-template-areas: 
     'title'
     'content'
@@ -80,6 +80,7 @@
     grid-column: 1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .sidonotis {
@@ -109,7 +110,6 @@
 
 .forumcontent{
     grid-area: cont;
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 2.5fr;
@@ -163,31 +163,236 @@
     float: left;
 }
 
+
+
+
+
 /* Trådars Grid CSS */
 .threads{
     grid-area: trådar;
     background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2.5fr 2.5fr 2.5fr 1fr;
+    gap: 1vh;
+    grid-template-areas: 
+    'threadtitle'
+    'virtualreality'
+    'top'
+    'forza'
+    'threadfooter'
+    ;
+    border: 1.5px solid black;
+}
+
+.threadtit{
+    grid-area: threadtitle;
+    background-color: rgb(202, 93, 73) ;
+
+}
+.threadtoptext{
+    color: white;
+    font-size: 2.5vh;
+    padding: 0;
+    line-height: 1vh;
+    margin-left: 1vw;
+}
+
+.threadvr, .threadtop, .threadforza {
+    background-color: rgb(253, 247, 223);
+    display: grid;
+    grid-template-columns: 4vw 1fr 15vw 7vw; /* Anpassar proportionerna */
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "star text user check";
+    align-items: center; 
+    padding: 2vh 1vw;
+}
+
+/* Grid-element */
+.star {
+    grid-area: star;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+.text {
+    grid-area: text;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.nr {
+    grid-area: star;
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name {
+    grid-area: name;
+    font-size: 1.8vh;
+    color: red;
+}
+.user {
+    grid-area: user;
+    font-size: 1.6vh;
+    color: gray;
+    text-align: center;
+}
+
+.check {
+    grid-area: check;
+    text-align: center;
+}
+.threadfooter{
+    grid-area: threadfooter;
+    background-color: rgb(202, 93, 73);
 }
 
 
 
+
+
+
+
+
+.rules{
+    grid-area: rules;
+    background-color: rgb(253, 247, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
 
 .forumcontent-bottom{
     grid-area: second-content;
-    background-color: black;
-    margin-top: 1vw;
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    grid-template-areas:
+    'rules sendin';
+}
+.rules{
+    grid-area: rules;
+    background-color: white;
+    border: 1.5px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.send{
+    grid-area: sendin;
+    background-color: white;
+    border: 1.5px solid black;
+}
+.ruletitle{
+    font-size: 1.5vw;
+    line-height: 0.1vh;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+.ruletext{
+    font-size: 0.8vw;
+    line-height: 2vh;
+    margin-left: 1vw;
 }
 
+    .form-container {
 
-
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #ffffff;
+      width: fit-contents;
+      height: fit-content;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .form-container textarea {
+      width: calc(100% - 20px);
+      height: 100px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      resize: none;
+      outline: none;
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease;
+    }
+    .form-container textarea:focus {
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    }
+    .form-container .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form-container button {
+      padding: 8px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .form-container .send {
+      background-color: #007BFF;
+      color: white;
+    }
+    .form-container .send:hover {
+      background-color: #0056b3;
+    }
+    .form-container .clear {
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .form-container .clear:hover {
+      background-color: #e0e0e0;
+    }
 
 
 
 footer{
     margin-top: 1vw;
     grid-area: footer;
-    background-color: blue;
+
 }
+
+
+footer {
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+  }
+
+  .footer-content span {
+    white-space: nowrap;
+  }
+
+  .footer-content span:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+  }
+
+  .footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+  }

@@ -1,70 +1,119 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #c5d4e4;
-}
-.banner{
+.banner {
     width: 80vw;
     margin: 0 auto;
 }
-.bannerimg{
+
+.bannerimg {
     width: 80vw;
 }
+
 nav {
-    display: flex;
-    align-items: center; 
-    background-image: url("/Skol-Projekt/slutprojek1.2/img/blackback_10x74.gif");
+    background-image: url(/Skol-Projekt/slutprojek1.2/img/blackback_10x74.gif);
     background-repeat: repeat-x;
-    background-size: auto; 
+    background-size: 100% 10vh;
     background-position: bottom; 
-    font-size: 1.5vw;
     height: 10vh;
     width: 80vw;
     margin: 0 auto;
     margin-top: -1vh;
+    display: flex;
+    justify-content: space-between; /* Space between logo/links and search */
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    height: 10vh;
+    width: 100%; /* Full width for better responsiveness */
     position: sticky;
     top: 0;
     overflow: hidden;
-
 }
 
-
 nav a {
-    display: flex;
-    justify-content: right;
-    align-items: center; 
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bold;
-    margin: 0; 
+    line-height: 10vh; /* Match the height of the nav for consistent alignment */
+    display: inline-block; /* Prevent inline-level shifting */
+    vertical-align: middle; /* Ensure vertical alignment */
+    transition: color 0.3s ease; /* Optional: Smooth hover effect */
 }
+
+nav a:hover {
+    color:  red;
+}
+
+
 
 .logo {
     display: flex;
-    align-items: center; 
     height: 9.9vh;
+    margin-right: 1vw;
 }
 
-
-nav a:hover {
-    background-color: #536f8c;
-    border-bottom: 1vh solid red;
-    height: 5.5vh;
+nav button {
+    padding: 1vh;
 }
 
 nav input[type="text"] {
-    margin-left: auto;
-    padding: 5px;
+    padding: 1vh;
 }
 
-.search{
-    margin-right: 5vw;
+.search {
+    display: flex;
+    justify-content: flex-end; /* Align search to the right */
+    align-items: center;
     height: 7.1vh;
-    margin-top: 2vh;
+    margin-left: auto;
 }
-.current{
+
+.current {
     background-color: #536f8c;
     border-bottom: 1vh solid #295f99;
-    height: 5.5vh;
+    height: 10vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        height: auto;
+    }
+
+    .navbar {
+        font-size: 3vw; /* Adjust font size */
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: flex-end; /* Keep aligned to the right */
+    }
+
+    nav input[type="text"] {
+        width: 70%; /* Adjust input width */
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center; /* Center on very small screens */
+    }
+
+    nav input[type="text"] {
+        width: 90%; /* Full width */
+        font-size: 1rem;
+    }
 }

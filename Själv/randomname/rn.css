@@ -1,0 +1,76 @@
+body{
+    background-color:#302a2e;
+}
+header{
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+}
+h1{
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+h2{
+    font-size: 2vw;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.content {
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+
+.gallery {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 20vw); /* 3 columns of equal width */
+    grid-template-rows: repeat(3, 15vw);
+    gap: 3vw; /* Space between grid items */
+    width: 100%; /* Ensure the gallery takes the full available width */
+    max-width: 80vw; /* Optional: Limit the container's maximum width */
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    width: 20vw;
+    height: 15vw;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .cta-button {
+    background-color: #E74C3C;
+    padding: 15px 25px;
+    font-size: 1.2em;
+}
+
+header-img {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.contact1, .contact2{
+    text-align: center;
+    font-size: 1vw;
+}
